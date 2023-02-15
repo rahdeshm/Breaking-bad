@@ -1,10 +1,11 @@
-import React from "react";
-
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+import logo from '../images/logo.png';
 const Header=()=>{
-
+    
     return(
         <div>
-            <div>Header</div>
+           <img src={logo} alt='logo'/>
         </div>
     )
 }
