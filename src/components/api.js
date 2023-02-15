@@ -2,6 +2,7 @@ import axios from 'axios';
 
 
 export default axios.create({
-    baseURL:'https://www.breakingbadapi.com/api/'
+    // baseURL:'http://www.breakingbadapi.com/api/'
+    baseURL:'https://jsonplaceholder.typicode.com/posts'
 })
 
