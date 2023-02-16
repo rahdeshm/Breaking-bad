@@ -1,11 +1,20 @@
 import React from "react";
+import CharacterListItems from "./CharacterListItems";
+import './CharacterList.scss'
 
-
-const CharacterList=()=>{
-
+const CharacterList=({items})=>{
+    //  console.log(items);
     return(
-     <div>Character list</div>
+        <section className="cards">
+    {
+        items.map(item=>{
+            // console.log(item);
+        return   <CharacterListItems item={item}/>
+        })
+    }
+    </section>
     )
+
 }
 
 export default CharacterList
